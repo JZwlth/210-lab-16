@@ -16,6 +16,9 @@ public:
     // Parameterized constructor for all RGB values
     Color(int r, int g, int b) : red(r), green(g), blue(b) {}
 
+    // Partial constructor (only red and green, blue defaults to 0)
+    Color(int r, int g) : red(r), green(g), blue(0) {}
+
     void setRed(int r);
     void setGreen(int g);
     void setBlue(int b);
