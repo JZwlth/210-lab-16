@@ -1,4 +1,4 @@
-// COMSC-210 | Lab 14 | Zhaoyi Zheng
+// COMSC-210 | Lab 16 | Zhaoyi Zheng
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -10,7 +10,11 @@ private:
     int blue;
 
 public:
-    Color(int r = 0, int g = 0, int b = 0) : red(r), green(g), blue(b) {}
+    // Default constructor (black color)
+    Color() : red(0), green(0), blue(0) {}
+
+    // Parameterized constructor for all RGB values
+    Color(int r, int g, int b) : red(r), green(g), blue(b) {}
 
     void setRed(int r);
     void setGreen(int g);
